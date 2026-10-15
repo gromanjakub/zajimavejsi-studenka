@@ -49,8 +49,9 @@ a{color:var(--accent2)}
 .vote{margin-top:12px;font-size:.95rem;color:var(--muted)}
 footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px solid var(--line);margin-top:56px}
 .dead{opacity:.75}
-.pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:10px 0 6px}
-.pics img{width:100%;height:200px;object-fit:cover;border-radius:10px;display:block;background:var(--chip)}
+.pics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0 6px}
+.pics img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:10px;display:block;background:var(--chip)}
+@media (max-width:600px){.pics{grid-template-columns:1fr}}
 .cap{font-size:.78rem;color:var(--muted);margin:0 0 8px}
 .where{font-size:.95rem;margin:8px 0 0}
 </style>
@@ -94,7 +95,7 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
   <div class="price">~100–300 tis.</div>
   <h3>2. Socha na náměstí Republiky</h3>
   <div class="tags"><span class="tag">proti ošklivosti</span><span class="tag">umění</span><span class="tag">provokace</span></div>
-  <div class="pics"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Head_of_Franz_Kafka_-_kinetic_sculpture_06.jpg/1280px-Head_of_Franz_Kafka_-_kinetic_sculpture_06.jpg" alt=""></div>
+  <div class="pics"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Head_of_Franz_Kafka_monument%2C_Praha.jpg/1280px-Head_of_Franz_Kafka_monument%2C_Praha.jpg" alt=""></div>
   <p class="cap">Ilustrace: Hlava Franze Kafky, David Černý, Praha. Socha jako atrakce, ne jako pomník.</p>
   <p>První kus současného veřejného umění ve Studénce. Soutěž pro studenty výtvarných škol, socha uprostřed náměstí mezi úřadem a poštou. Studentské dílo nemusí stát moc. Dražší bude osazení: základ v dlažbě, jeřáb, ukotvení. Nová kašna se staví na místě té staré na severu náměstí, takže střed zůstává volný.</p>
   <div class="pm">
