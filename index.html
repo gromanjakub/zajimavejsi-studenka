@@ -51,6 +51,10 @@ a{color:var(--accent2)}
 footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px solid var(--line);margin-top:56px}
 .dead{opacity:.75}
 .pics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0 6px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:6px 0}
+.gallery figure{margin:0}.gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:8px;display:block}
+.gallery figcaption{font-size:.75rem;color:var(--muted);text-align:center;padding-top:2px}
+@media (max-width:600px){.gallery{grid-template-columns:repeat(2,1fr)}}
 .pics.one{grid-template-columns:1fr}
 .pics img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:10px;display:block;background:var(--chip)}
 @media (max-width:600px){.pics{grid-template-columns:1fr}}
@@ -84,11 +88,13 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
   <div class="price">~150–390 tis.</div>
   <h3>1. Mural v podchodu pod nádražím</h3>
   <div class="tags"><span class="tag hot">favorit</span><span class="tag">hezčí město</span><span class="tag">umění</span></div>
-  <div class="pics one"><img loading="lazy" src="img/podchod_realisticky.jpg" alt="Vizualizace: podchod ve Studénce s realistickou malbou Poodří"></div>
-  <p class="cap">Vizualizace podchodu ve Studénce, styl realistický.</p>
-  <div class="pics"><img loading="lazy" src="img/podchod_se_stropem.jpg" alt="Vizualizace: podchod s malbou i na stropě"><img loading="lazy" src="img/podchod_minimalisticky.jpg" alt="Vizualizace: podchod s minimalistickou linkovou malbou"></div>
-  <p class="cap">Další možné styly: malba i na stropě (vlevo), minimalistická linková kresba (vpravo). Vizualizace jsou ilustrační, vytvořené pomocí AI.</p>
-  <p>Šedesát metrů bílých stěn, kterými denně prochází každý, kdo jede vlakem do školy nebo do práce. Velká malba na téma <b>Poodří</b>: tůně, lužní lesy, rozlivy Odry, čápi, ledňáčci, bobři, kvetoucí louky. Tedy příroda, kvůli které se do Studénky jezdí. Námět je daný, lidi by hlasovali jen o stylu (třeba realistický, ilustrační, nebo abstraktní). Malovat by mohli například studenti Fakulty umění Ostravské univerzity.</p>
+  <div class="pics one"><img loading="lazy" src="img/podchod_dnes.jpg" alt="Podchod pod nádražím ve Studénce dnes"></div>
+  <p class="cap">Podchod dnes.</p>
+  <div class="pics"><img loading="lazy" src="img/podchod_vibrant.jpg" alt="Vizualizace: barevný mural Poodří"><img loading="lazy" src="img/podchod_journal.jpg" alt="Vizualizace: mural jako přírodovědný deník"></div>
+  <p class="cap">Dva oblíbené styly: barevný (vlevo) a přírodovědný deník (vpravo).</p>
+  <div class="gallery"><figure><img loading="lazy" src="img/podchod_flat.jpg" alt="Vizualizace podchodu, styl plakátový"><figcaption>plakátový</figcaption></figure><figure><img loading="lazy" src="img/podchod_pixelized.jpg" alt="Vizualizace podchodu, styl pixelový"><figcaption>pixelový</figcaption></figure><figure><img loading="lazy" src="img/podchod_printmaking.jpg" alt="Vizualizace podchodu, styl linoryt"><figcaption>linoryt</figcaption></figure><figure><img loading="lazy" src="img/podchod_secese.jpg" alt="Vizualizace podchodu, styl secese"><figcaption>secese</figcaption></figure><figure><img loading="lazy" src="img/podchod_topographic.jpg" alt="Vizualizace podchodu, styl mapa Poodří"><figcaption>mapa Poodří</figcaption></figure><figure><img loading="lazy" src="img/podchod_minimalisticky.jpg" alt="Vizualizace podchodu, styl linková kresba"><figcaption>linková kresba</figcaption></figure><figure><img loading="lazy" src="img/podchod_realisticky.jpg" alt="Vizualizace podchodu, styl realistický"><figcaption>realistický</figcaption></figure><figure><img loading="lazy" src="img/podchod_se_stropem.jpg" alt="Vizualizace podchodu, styl realistický se stropem"><figcaption>realistický se stropem</figcaption></figure></div>
+  <p class="cap">Další možné styly. Vizualizace jsou ilustrační, vytvořené pomocí AI. Malba i na stropě by se do rozpočtu nejspíš nevešla, jednodušší varianta jen na stěnách ano.</p>
+  <p>Šedesát metrů bílých stěn, kterými denně prochází každý, kdo jede vlakem do školy nebo do práce. Velká malba na téma <b>Poodří</b>: tůně, lužní lesy, rozlivy Odry, čápi, ledňáčci, bobři, kvetoucí louky. Tedy příroda, kvůli které se do Studénky jezdí. Námět je daný, lidi by hlasovali jen o stylu. Ukázky stylů jsou níže. Malovat by mohli například studenti Fakulty umění Ostravské univerzity.</p>
   <div class="pm">
     <div class="plus"><b>Pro</b><ul><li>podchodem denně prochází spousta lidí</li><li>Správa železnic malbu v roce 2022 nevyloučila</li><li>výsledek je vidět přes noc</li><li>vlakem přijíždějí i turisté do CHKO Poodří, mural je přivítá</li></ul></div>
     <div class="minus"><b>Proti</b><ul><li>podchod nepatří městu, zjišťuju, jestli to pravidla dovolí</li><li>chce to kvalitní barvy a ochranný nátěr, aby malba vydržela</li></ul></div>
