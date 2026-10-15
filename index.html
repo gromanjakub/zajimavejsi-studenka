@@ -49,6 +49,10 @@ a{color:var(--accent2)}
 .vote{margin-top:12px;font-size:.95rem;color:var(--muted)}
 footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px solid var(--line);margin-top:56px}
 .dead{opacity:.75}
+.pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:10px 0 6px}
+.pics img{width:100%;height:200px;object-fit:cover;border-radius:10px;display:block;background:var(--chip)}
+.cap{font-size:.78rem;color:var(--muted);margin:0 0 8px}
+.where{font-size:.95rem;margin:8px 0 0}
 </style>
 </head>
 <body>
@@ -77,6 +81,8 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
   <div class="price">~150–390 tis.</div>
   <h3>1. Mural v podchodu pod nádražím</h3>
   <div class="tags"><span class="tag hot">favorit</span><span class="tag">proti ošklivosti</span><span class="tag">umění</span></div>
+  <div class="pics"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Captain_Petko_Voyvoda_underpass_mural_in_Varna.jpg/1280px-Captain_Petko_Voyvoda_underpass_mural_in_Varna.jpg" alt=""></div>
+  <p class="cap">Ilustrace: mural v podchodu ve Varně.</p>
   <p>Šedesát metrů bílých stěn, kterými denně prochází každý, kdo jede vlakem do školy nebo do práce. Velká malba od mladých umělců, třeba ze soutěže studentů Fakulty umění Ostravské univerzity, o vítězném návrhu by hlasovali lidi. Ve Studénce zatím není ani jeden mural.</p>
   <div class="pm">
     <div class="plus"><b>Pro</b><ul><li>nejvíc používané ošklivé místo ve městě</li><li>Správa železnic malbu v roce 2022 nevyloučila</li><li>výsledek je vidět přes noc</li></ul></div>
@@ -85,13 +91,15 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
 </div>
 
 <div class="idea">
-  <div class="price">~200–390 tis.</div>
+  <div class="price">~100–300 tis.</div>
   <h3>2. Socha na náměstí Republiky</h3>
   <div class="tags"><span class="tag">proti ošklivosti</span><span class="tag">umění</span><span class="tag">provokace</span></div>
-  <p>První kus současného veřejného umění ve Studénce. Soutěž pro mladé výtvarníky, socha uprostřed náměstí mezi úřadem a poštou. Nová kašna se staví na místě té staré na severu náměstí, takže střed zůstává volný.</p>
+  <div class="pics"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Head_of_Franz_Kafka_-_kinetic_sculpture_06.jpg/1280px-Head_of_Franz_Kafka_-_kinetic_sculpture_06.jpg" alt=""></div>
+  <p class="cap">Ilustrace: Hlava Franze Kafky, David Černý, Praha. Socha jako atrakce, ne jako pomník.</p>
+  <p>První kus současného veřejného umění ve Studénce. Soutěž pro studenty výtvarných škol, socha uprostřed náměstí mezi úřadem a poštou. Studentské dílo nemusí stát moc. Dražší bude osazení: základ v dlažbě, jeřáb, ukotvení. Nová kašna se staví na místě té staré na severu náměstí, takže střed zůstává volný.</p>
   <div class="pm">
     <div class="plus"><b>Pro</b><ul><li>náměstí dostane něco, kvůli čemu se tam zastavíš</li><li>rozproudí debatu, a o to jde</li></ul></div>
-    <div class="minus"><b>Proti</b><ul><li>rozdělí město na dva tábory</li><li>stavba kašny v roce 2027 může zasáhnout okolí</li></ul></div>
+    <div class="minus"><b>Proti</b><ul><li>je to „jen“ umění, nedá se na tom sedět ani s tím nic dělat</li><li>osazení do dlažby může být dražší než socha sama</li></ul></div>
   </div>
 </div>
 
@@ -99,20 +107,26 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
   <div class="price">~150–390 tis.</div>
   <h3>3. Místo pro mladé (hangout)</h3>
   <div class="tags"><span class="tag">pro mladé</span><span class="tag">zdarma</span></div>
+  <div class="pics"><img loading="lazy" src="https://inframarks.nl/wp-content/uploads/2024/01/Jongeren-ontmoetingspunt-wifi-telefoon-muziek-hp.jpg" alt=""><img loading="lazy" src="https://www.stedon.nl/wp-content/uploads/2023/09/JOP-Type-Baseball-350-View-2.jpg" alt=""></div>
+  <p class="cap">Ilustrace: nizozemské JOP (InfraMarks, Stedon).</p>
   <p>Kryté místo, kde se dá večer sedět, aniž bys musel něco kupovat: střecha, lavice naproti sobě, světlo, zásuvky na nabíjení, třeba velká houpačka nebo síť. V Nizozemsku tomu říkají <a href="https://www.stedon.nl/stedelijke-producten/straatmeubilair/jongeren-ontmoetingsplek/">JOP</a> a mají je v katalogu. V Česku jsme hotový takový projekt z participativního rozpočtu nenašli, byli bychom první.</p>
   <div class="pm">
     <div class="plus"><b>Pro</b><ul><li>přímo řeší „není tu co dělat“</li><li>levné, katalogové řešení</li></ul></div>
-    <div class="minus"><b>Proti</b><ul><li>bude kontroverzní, hledáme místo bez sousedů pod okny, ale ne úplně schované</li><li>funguje jen tehdy, když ho navrhnou mladí sami</li></ul></div>
+    <div class="minus"><b>Proti</b><ul><li>bude kontroverzní, ale dá se postavit na zkušební rok s vyhodnocením</li><li>funguje jen tehdy, když ho navrhnou mladí sami</li></ul></div>
   </div>
+  <p class="where"><b>Kde:</b> prázdná plocha u Kotvice (blízko centra, ale stranou), nebo u koupaliště a BMX kopečků, kde nejsou sousedé.</p>
 </div>
 
 <div class="idea">
   <div class="price">~100–250 tis.</div>
   <h3>4. Streetball: jeden koš a pomalovaný plac</h3>
   <div class="tags"><span class="tag">pro mladé</span><span class="tag">sport</span><span class="tag">proti ošklivosti</span></div>
-  <p>Jeden basketbalový koš a plocha pomalovaná od výtvarníka, jako slavné hřiště Pigalle v Paříži. Místo: u BMX kopečků u koupaliště, kde už stojí ohniště a lanovka z minulých participativních rozpočtů. Nebo předělat některé ze stávajících ošklivých asfaltových hřišť.</p>
+  <div class="pics"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Splash_Project_colorful_basketball_court_in_Neve_Tzedek_Tel_Aviv_2.jpg/1280px-Splash_Project_colorful_basketball_court_in_Neve_Tzedek_Tel_Aviv_2.jpg" alt=""></div>
+  <p class="cap">Ilustrace: pomalované hřiště, Tel Aviv.</p>
+  <p>Jeden basketbalový koš a plocha pomalovaná od výtvarníka, jako slavné hřiště Pigalle v Paříži.</p>
+  <p class="where"><b>Kde:</b> u Kotvice, nebo jako součást sportovního koutu u koupaliště a BMX kopečků, kde už stojí ohniště a lanovka z minulých participativních rozpočtů. Uprostřed sídliště by vadil sousedům, a bývalé hřiště u náměstí už je parkoviště.</p>
   <div class="pm">
-    <div class="plus"><b>Pro</b><ul><li>z ošklivého asfaltu landmark</li><li>u BMX nejsou sousedé, kteří by si stěžovali</li></ul></div>
+    <div class="plus"><b>Pro</b><ul><li>z ošklivého asfaltu landmark</li><li>stačí malá plocha, ne celé hřiště</li></ul></div>
     <div class="minus"><b>Proti</b><ul><li>nesmí to být v areálu letního stadionu, tam už město plánuje vlastní sportoviště</li></ul></div>
   </div>
 </div>
@@ -121,10 +135,12 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
   <div class="price">~200–340 tis.</div>
   <h3>5. Disc golf</h3>
   <div class="tags"><span class="tag">sport</span><span class="tag">příroda</span></div>
+  <div class="pics"><img loading="lazy" src="https://svitavsky.denik.cz/images/api/image/1366x910/a82/a82233e8-5ad4-4a8c-bab8-c9c29539ae73.jpeg" alt=""></div>
+  <p class="cap">Ilustrace: disc golf v Poličce, postavený z participativního rozpočtu (Deník).</p>
   <p>6–9 košů v parku nebo na kraji města. V Česku je přes 220 hřišť, v Novém Jičíně mají přes 7 400 zaznamenaných kol a v Hustopečích si lidi po čtyřech letech odhlasovali rozšíření.</p>
   <div class="pm">
     <div class="plus"><b>Pro</b><ul><li>prokazatelně se hraje</li><li>skoro žádná údržba</li></ul></div>
-    <div class="minus"><b>Proti</b><ul><li>hrají hlavně chlapi 25–40, ne teenageři</li><li>Bílovec má nové hřiště 8 km odsud</li></ul></div>
+    <div class="minus"><b>Proti</b><ul><li>Bílovec má nové hřiště 8 km odsud</li><li>zatím nevíme kde, potřebuje kus zeleně s prostorem na dlouhé hody</li></ul></div>
   </div>
 </div>
 
@@ -132,6 +148,8 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
   <div class="price">~300–390 tis.</div>
   <h3>6. Boulder: lezecký kámen venku</h3>
   <div class="tags"><span class="tag">pro mladé</span><span class="tag">sport</span></div>
+  <div class="pics"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Spielplatz_Kletterfelsen_Samariterstra%C3%9Fe_Eldenaer_Stra%C3%9Fe_Berlin.jpg/1280px-Spielplatz_Kletterfelsen_Samariterstra%C3%9Fe_Eldenaer_Stra%C3%9Fe_Berlin.jpg" alt=""></div>
+  <p class="cap">Ilustrace: lezecký kámen, Berlín.</p>
   <p>Umělý lezecký blok s dopadovou plochou, bez lana a bez dozoru. Nejbližší lezecká stěna je v Ostravě.</p>
 </div>
 
@@ -139,6 +157,8 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
   <div class="price">~200–350 tis.</div>
   <h3>7. Letní kino a pódium</h3>
   <div class="tags"><span class="tag">pro mladé</span><span class="tag">akce</span></div>
+  <div class="pics"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Freiluftkino_Friedrichshain_2020.jpg/1280px-Freiluftkino_Friedrichshain_2020.jpg" alt=""></div>
+  <p class="cap">Ilustrace: letní kino Friedrichshain, Berlín.</p>
   <p>Stěna na promítání, zamykatelný elektrický sloupek a sezení na stupních. Kdokoli pak může uspořádat filmový večer, open mic nebo DJ set bez půjčování elektrocentrály.</p>
 </div>
 
@@ -146,6 +166,8 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
   <div class="price">~200–390 tis.</div>
   <h3>8. Světelná instalace na náměstí</h3>
   <div class="tags"><span class="tag">proti ošklivosti</span><span class="tag">umění</span></div>
+  <div class="pics"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Victoria_Hall_-_JeP_-_Mapping_fa%C3%A7ade_01.jpg/1280px-Victoria_Hall_-_JeP_-_Mapping_fa%C3%A7ade_01.jpg" alt=""></div>
+  <p class="cap">Ilustrace: projekce na fasádu, Ženeva.</p>
   <p>Programovatelné barevné nasvícení fasády úřadu nebo projekce na dlažbu. Z komunistického náměstí by se v noci stalo něco, kam stojí za to dojít.</p>
 </div>
 
