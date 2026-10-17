@@ -60,6 +60,27 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
 @media (max-width:600px){.pics{grid-template-columns:1fr}}
 .cap{font-size:.78rem;color:var(--muted);margin:0 0 8px}
 .where{font-size:.95rem;margin:8px 0 0}
+.intro p{margin:0 0 8px}.intro p:last-child{margin:0}
+.scale{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 0}
+.scale div{background:var(--chip);border-radius:10px;padding:10px 12px;font-size:.9rem}
+.scale b{display:block}
+@media (max-width:600px){.scale{grid-template-columns:1fr}}
+.spot{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:20px 0}
+.spot h3{margin:0 0 4px;font-size:1.35rem}
+.spot .sub{color:var(--muted);font-size:.92rem;margin:0 0 10px}
+.lvl{display:inline-block;background:var(--accent2);color:#fff;border-radius:99px;padding:1px 10px;font-size:.8rem;font-weight:600;margin-right:6px}
+.lvl.far{background:var(--accent)}
+.facts{font-size:.92rem;background:var(--chip);border-radius:10px;padding:10px 14px;margin:10px 0}
+.facts ul{margin:4px 0 0;padding-left:18px}
+.mi{border-top:1px solid var(--line);padding:12px 0 4px}
+.mi h4{margin:0;font-size:1.05rem;display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.mi h4>span{color:var(--accent2);font-size:.85rem;white-space:nowrap;font-weight:700}
+.mi p{margin:4px 0;font-size:.95rem}
+.mi .ex{font-size:.82rem;color:var(--muted)}
+.star{color:var(--accent)}
+details.more{margin-top:8px}
+details.more>summary{cursor:pointer;font-weight:600;color:var(--accent2);padding:8px 0}
+.combo{font-size:.92rem;border-left:3px solid var(--accent);padding:4px 0 4px 12px;margin:12px 0 4px}
 </style>
 </head>
 <body>
@@ -78,32 +99,15 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
     <div><b>20 podpisů</b>občanů Studénky</div>
     <div><b>do konce 2027</b>musí být hotovo</div>
     <div><b>max. 10 % ročně</b>provozní náklady</div>
-    <div><b>veřejný prostor</b>nesmí kolidovat s plány města</div>
+    <div><b>na majetku města</b>veřejný prostor, nesmí kolidovat s plány města</div>
   </div>
 </div>
 
 <h2>Nápady</h2>
 
-<div class="idea top">
-  <div class="price">~150–390 tis.</div>
-  <h3>1. Mural v podchodu pod nádražím</h3>
-  <div class="tags"><span class="tag hot">favorit</span><span class="tag">hezčí město</span><span class="tag">umění</span></div>
-  <div class="pics one"><img loading="lazy" src="img/podchod_dnes.jpg" alt="Podchod pod nádražím ve Studénce dnes"></div>
-  <p class="cap">Podchod dnes.</p>
-  <div class="pics"><img loading="lazy" src="img/podchod_vibrant.jpg" alt="Vizualizace: barevný mural Poodří"><img loading="lazy" src="img/podchod_journal.jpg" alt="Vizualizace: mural jako přírodovědný deník"></div>
-  <p class="cap">Dva oblíbené styly: barevný (vlevo) a přírodovědný deník (vpravo).</p>
-  <div class="gallery"><figure><img loading="lazy" src="img/podchod_flat.jpg" alt="Vizualizace podchodu, styl plakátový"><figcaption>plakátový</figcaption></figure><figure><img loading="lazy" src="img/podchod_pixelized.jpg" alt="Vizualizace podchodu, styl pixelový"><figcaption>pixelový</figcaption></figure><figure><img loading="lazy" src="img/podchod_printmaking.jpg" alt="Vizualizace podchodu, styl linoryt"><figcaption>linoryt</figcaption></figure><figure><img loading="lazy" src="img/podchod_secese.jpg" alt="Vizualizace podchodu, styl secese"><figcaption>secese</figcaption></figure><figure><img loading="lazy" src="img/podchod_topographic.jpg" alt="Vizualizace podchodu, styl mapa Poodří"><figcaption>mapa Poodří</figcaption></figure><figure><img loading="lazy" src="img/podchod_minimalisticky.jpg" alt="Vizualizace podchodu, styl linková kresba"><figcaption>linková kresba</figcaption></figure><figure><img loading="lazy" src="img/podchod_realisticky.jpg" alt="Vizualizace podchodu, styl realistický"><figcaption>realistický</figcaption></figure><figure><img loading="lazy" src="img/podchod_se_stropem.jpg" alt="Vizualizace podchodu, styl realistický se stropem"><figcaption>realistický se stropem</figcaption></figure></div>
-  <p class="cap">Další možné styly. Vizualizace jsou ilustrační, vytvořené pomocí AI. Malba stropu by se do rozpočtu nevešla. Stěny jsou navržené tak, aby se strop dal později doplnit, pokud se bude líbit.</p>
-  <p>Šedesát metrů bílých stěn, kterými denně prochází každý, kdo jede vlakem do školy nebo do práce. Velká malba na téma <b>Poodří</b>: tůně, lužní lesy, rozlivy Odry, čápi, ledňáčci, bobři, kvetoucí louky. Tedy příroda, kvůli které se do Studénky jezdí. Námět je daný, lidi by hlasovali jen o stylu. Ukázky stylů jsou níže. Malovat by mohli například studenti Fakulty umění Ostravské univerzity.</p>
-  <div class="pm">
-    <div class="plus"><b>Pro</b><ul><li>podchodem denně prochází spousta lidí</li><li>Správa železnic malbu v roce 2022 nevyloučila</li><li>výsledek je vidět přes noc</li><li>vlakem přijíždějí i turisté do CHKO Poodří, mural je přivítá</li></ul></div>
-    <div class="minus"><b>Proti</b><ul><li>podchod nepatří městu, zjišťuju, jestli to pravidla dovolí</li><li>chce to kvalitní barvy a ochranný nátěr, aby malba vydržela</li></ul></div>
-  </div>
-</div>
-
 <div class="idea">
   <div class="price">~100–300 tis.</div>
-  <h3>2. Socha na náměstí Republiky</h3>
+  <h3>1. Socha na náměstí Republiky</h3>
   <div class="tags"><span class="tag">hezčí město</span><span class="tag">umění</span><span class="tag">Poodří</span></div>
   <div class="pics one"><img loading="lazy" src="img/socha_lednacek.jpg" alt="Vizualizace: socha ledňáčka na rozetě náměstí Republiky"></div>
   <p class="cap">Vizualizace: ledňáček z cortenu na rozetě náměstí Republiky. Ledňáček je symbol Poodří, ladí s muralem v podchodu.</p>
@@ -116,7 +120,7 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
 
 <div class="idea">
   <div class="price">~150–390 tis.</div>
-  <h3>3. Kryté posezení</h3>
+  <h3>2. Kryté posezení</h3>
   <div class="tags"><span class="tag">posezení</span><span class="tag">zdarma</span></div>
   <div class="pics"><img loading="lazy" src="img/jop_drenthen.jpg" alt="Dřevěné kryté posezení v nizozemské obytné čtvrti"></div>
   <p class="cap">Ilustrace: kryté posezení v nizozemské obytné čtvrti (Drenthen).</p>
@@ -129,31 +133,245 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
 </div>
 
 <div class="idea">
-  <div class="price">~200–340 tis.</div>
-  <h3>4. Disc golf</h3>
+  <div class="price">~100–240 tis.</div>
+  <h3>3. Disc golf</h3>
   <div class="tags"><span class="tag">sport</span><span class="tag">příroda</span></div>
   <div class="pics"><img loading="lazy" src="https://svitavsky.denik.cz/images/api/image/1366x910/a82/a82233e8-5ad4-4a8c-bab8-c9c29539ae73.jpeg" alt=""></div>
   <p class="cap">Ilustrace: disc golf v Poličce, postavený z participativního rozpočtu (Deník).</p>
-  <p>6–9 košů v parku, nejspíš v zámeckém. V Česku je přes 220 hřišť, v Novém Jičíně mají přes 7 400 zaznamenaných kol a v Hustopečích si lidi po čtyřech letech odhlasovali rozšíření.</p>
+  <p>Menší hřiště na 4–6 košů v Butovicích, mezi Budovatelskou a Tovární: hájek se vzrostlými stromy a vedle něj trávník mezi paneláky, dohromady asi 3,7 ha. Pozemky patří městu a nejsou památkově chráněné. V Česku je přes 220 hřišť, v Novém Jičíně mají přes 7 400 zaznamenaných kol a v Hustopečích si lidi po čtyřech letech odhlasovali rozšíření.</p>
+  <p>Zámecký park by byl na disc golf nejlepší, ale je to kulturní památka. Každou úpravu musí schválit památkáři v Bílovci, park leží v archeologickém území a stojí v něm památná Zámecká lípa. Jde to, disc golf v chráněném zámeckém parku mají třeba v Moravském Krumlově, Pacově nebo Zbirohu, ale vyřizování může trvat měsíce. Proto nejdřív Butovice, a když se to chytí, rozšíření do zámeckého parku.</p>
   <div class="pm">
-    <div class="plus"><b>Pro</b><ul><li>prokazatelně se hraje</li><li>skoro žádná údržba</li></ul></div>
-    <div class="minus"><b>Proti</b><ul><li>Bílovec má nové hřiště 8 km odsud</li><li>nejvhodnější je zámecký park, ten je ale památkově chráněný, takže by to musel schválit památkový úřad</li></ul></div>
+    <div class="plus"><b>Pro</b><ul><li>prokazatelně se hraje</li><li>skoro žádná údržba</li><li>v Butovicích pozemky patří městu, bez památkářů</li></ul></div>
+    <div class="minus"><b>Proti</b><ul><li>Bílovec má nové hřiště 8 km odsud</li><li>v Butovicích je blízko silnice, dětské hřiště a paneláky, koše se musí rozmístit bezpečně</li><li>město chystá studii regenerace sídliště Butovice a na části trávníku plánuje parkoviště, musí to s tím ladit</li></ul></div>
   </div>
 </div>
 
 <div class="idea">
   <div class="price">podle stavu</div>
-  <h3>5. Staré hřiště ve Studénce 1</h3>
+  <h3>4. Staré hřiště ve Studénce 1</h3>
   <div class="tags"><span class="tag">sport</span><span class="tag">Studénka 1</span></div>
   <p>Malé hřiště za kostelem a hřbitovem, kde se kdysi hrál fotbal. V územním plánu je pořád vedené jako sportoviště (asi 35 × 15 m). Mohla by stačit obecná revitalizace: nové branky, posekat, lavička.</p>
-  <p class="where">Pozemek patří městu. Zatím zjišťuju, v jakém je hřiště stavu. Hrálo by se tu? Napište, jestli byste sem chodili.</p>
+  <p class="where">Pozemek patří městu. Hrálo by se tu? Napište, jestli byste sem chodili. Odvážnější nápady pro toto místo jsou níž v části <a href="#hriste">Místa</a>.</p>
   <div class="pm">
     <div class="plus"><b>Pro</b><ul><li>pozemek patří městu a je vedený jako sportoviště</li><li>levné, když stačí branky</li></ul></div>
     <div class="minus"><b>Proti</b><ul><li>jiná hřiště už ve městě jsou</li></ul></div>
   </div>
 </div>
 
+<h2>Místa: prázdného prostoru je dost, chybí zajímavé věci</h2>
+<div class="box intro">
+  <p>Prošel jsem pět míst, kde je hodně volného prostoru a málo důvodů se tam zastavit. Ke každému jsem sepsal několik nápadů, i odvážných, ať je z čeho vybírat. Platí jednoduché pravidlo: <b>čím dál od centra, tím víc musí místo stát za cestu.</b></p>
+  <div class="scale">
+    <div><b>Centrum</b>Kotvice, park u Budovatelské: stačí, aby bylo hezčí a příjemnější.</div>
+    <div><b>Kousek za centrem</b>BMX kopečky u koupaliště: musí to být užitečné a zábavné.</div>
+    <div><b>Studénka 1</b>park u požární nádrže, staré hřiště za kostelem: něco, kvůli čemu by sem přijeli i z Ostravy.</div>
+  </div>
+  <p style="margin-top:12px">U každého nápadu je hrubý odhad ceny první etapy do 390 000 Kč. Větší nápady se dají stavět po etapách v dalších letech. Ceny jsou odhady podle srovnatelných projektů, ne nabídky firem. Napište, co by vás sem vytáhlo.</p>
+</div>
+
+<!-- KOTVICE -->
+<div class="spot" id="kotvice">
+  <h3>Kotvice</h3>
+  <p class="sub"><span class="lvl">centrum</span>betonová plocha před nákupním střediskem s poštou, 2 minuty od náměstí</p>
+  <div class="pics"><img loading="lazy" src="img/misto_kotvice_budova.jpg" alt="Nákupní středisko Kotvice a betonová plocha před ním"><img loading="lazy" src="img/misto_kotvice_plocha.jpg" alt="Popraskané betonové panely před Kotvicí, lavička a malý záhon"></div>
+  <p class="cap">Kotvice dnes: velká popraskaná plocha, dva malé záhony, jedna lavička.</p>
+  <div class="facts"><b>Co ověřit:</b><ul><li>Komu patří plocha před budovou. Je rozdělená na několik parcel a vlastníka se zatím nepodařilo ověřit. Pokud nepatří městu, z participativního rozpočtu to nepůjde.</li><li>Fasáda budovy městu nepatří, takže mural na ni zatím nejde.</li><li>Starší studie centra (2016) počítá s přestavbou Kotvice. Zatím jen na papíře.</li></ul></div>
+
+  <div class="mi"><h4><b><span class="star">★</span> Dešťová zahrada místo panelů</b><span>~330–360 tis.</span></h4>
+    <p>Vybourat asi 150 m² popraskaných panelů a udělat záhon, který zachytává dešťovou vodu, s lavičkami kolem. V Nizozemsku se z vytrhávání dlažby stala celostátní soutěž (<i>tegelwippen</i>).</p>
+    <p class="ex">Příklad: Ruprechtov, 116 m² dešťových zahrad s posezením za 372 tis. (<a href="https://www.estav.cz/cz/9725.priklady-tahnou-obec-upravila-park-aby-zadrzoval-destovou-vodu-pomaha-proti-suchu-i-bleskovym-zaplavam">Estav</a>), <a href="https://www.utrecht.nl/nieuws/nieuwsarchief/nieuwsbericht-gemeente-utrecht/utrecht-wint-goud-bij-het-nk-tegelwippen-437000-tegels-gewipt">Utrecht</a>. Na větší etapu se dá získat dotace.</p></div>
+  <div class="mi"><h4><b><span class="star">★</span> Stromový ostrov s kruhovou lavicí</b><span>~190–250 tis.</span></h4>
+    <p>Dva stinné stromy do volné půdy a kolem nich kruhové lavice. Na rozdíl od náměstí tu není potřeba drahý kořenový prostor pod dlažbou, stačí rozbít panely.</p></div>
+  <div class="mi"><h4><b>Zelená pergola</b><span>~250–340 tis.</span></h4>
+    <p>Pergola s popínavkami nad lavičkami. Zakryje hnědou fasádu, aniž by se jí dotkla, a v létě dá stín.</p></div>
+  <details class="more"><summary>Další nápady pro Kotvici (5)</summary>
+    <div class="mi"><h4><b>Barevná plocha</b><span>~120–220 tis.</span></h4>
+      <p>Velká malba na zem, 300–500 m². Rychlé, levné, vidět z oken paneláků. <span class="ex">(<a href="https://asphaltart.bloomberg.org/">Bloomberg Asphalt Art</a>)</span></p></div>
+    <div class="mi"><h4><b>Hravá cesta na poštu</b><span>~120–200 tis.</span></h4>
+      <p>Nízké herní prvky a namalované hry po cestě, aby děti nákup s rodiči bavil.</p></div>
+    <div class="mi"><h4><b>Poesiomat</b><span>cena na dotaz</span></h4>
+      <p>Kliková „mluvící trouba“ bez elektřiny, která hraje místní nahrávky: básně, vzpomínky pamětníků, zvuky Poodří. V Česku je jich asi 70, nejblíž v Příboře. <span class="ex">(<a href="https://www.poesiomat.cz/co-je-poesiomat">poesiomat.cz</a>)</span></p></div>
+    <div class="mi"><h4><b>Světelné girlandy</b><span>~110–220 tis.</span></h4>
+      <p>Řetězy žárovek na sloupech nad plochou. Večer z toho bude místo, ne jen průchod.</p></div>
+    <div class="mi"><h4><b>Knihobudka a pítko</b><span>~30–300 tis.</span></h4>
+      <p>Malé doplňky k ostatním nápadům. U pítka ověřit, jestli ho už nebude mít nová kašna na náměstí.</p></div>
+  </details>
+  <p class="combo"><b>Kombinace „Zelená Kotvice“</b> (~340–370 tis.): dešťová zahrada, jeden stromový ostrov a knihobudka.</p>
+</div>
+
+<!-- BUDOVATELSKÁ -->
+<div class="spot" id="budovatelska">
+  <h3>Park u Budovatelské</h3>
+  <p class="sub"><span class="lvl">centrum</span>Butovice, mezi Budovatelskou a Tovární, asi 3,7 ha, pozemky města, 13 minut pěšky od náměstí</p>
+  <div class="pics"><img loading="lazy" src="img/misto_budovatelska_park.jpg" alt="Park u Budovatelské se vzrostlými stromy a trávníkem"><img loading="lazy" src="img/misto_budovatelska_lavicka.jpg" alt="Lavička v parku u Budovatelské na podzim"></div>
+  <p class="cap">Hezký klidný park, jen v něm skoro nic není.</p>
+  <div class="facts"><b>Musí s tím ladit:</b><ul><li>Na Tovární („u Krytu“) vznikne psí hřiště z participativního rozpočtu 2026 (rada města 14. 5. 2026). Přesné umístění zatím není zveřejněné.</li><li>Na části trávníku město plánuje parkoviště.</li></ul></div>
+
+  <div class="mi"><h4><b><span class="star">★</span> Disc golf na 6 košů</b><span>~265–290 tis.</span></h4>
+    <p>Šest jamek mezi stromy. Koše aspoň 20 m a odhodiště aspoň 15 m od hřiště, cest a domů, hází se podél paneláků, nikdy proti nim. Rozmístění se musí přizpůsobit psímu hřišti: žádné hody přes plot ani směrem k němu. Polička postavila 6 košů za necelých 200 tis. (2023).</p>
+    <p class="ex">Příklady: <a href="https://policka.org/soubor/prilohy/9823">Polička</a>, <a href="https://www.prodiscgolf.cz/magazin/2026/04/29/otevreli-jsme-discgolfove-hriste-v-bystrici-pod-hostynem/">Bystřice pod Hostýnem</a>, <a href="https://udisc.com/courses/disc-golf-park-kamyk-lWi5">Praha 12 Kamýk</a> (participativní rozpočet).</p></div>
+  <div class="mi"><h4><b><span class="star">★</span> Koberec krokusů pod stromy</b><span>~100–300 tis.</span></h4>
+    <p>Desetitisíce cibulek pod stromy, na jaře celý park fialový. Údržba skoro nulová, každý rok se to rozrůstá. Při společném sázení s dobrovolníky je to výrazně levnější. Narcisy ne u psího hřiště, jsou pro psy jedovaté.</p>
+    <p class="ex">Příklady: <a href="https://www.novinky.cz/clanek/vase-zpravy-frydek-mistek-zaplavi-kvety-krokusu-tulipanu-a-narcisu-40276190">Frýdek-Místek</a>, <a href="https://egc.ostrava.cz/ostrava-shines-colours-spring-flowers/">Ostrava</a>.</p></div>
+  <div class="mi"><h4><b>Butovický sad</b><span>~150–220 tis.</span></h4>
+    <p>Staré místní odrůdy jabloní, hrušní a švestek, ovoce pro každého. Může se doplnit grantem Nadace ČEZ.</p></div>
+  <details class="more"><summary>Další nápady pro Budovatelskou (6)</summary>
+    <div class="mi"><h4><b>Květnatá louka</b><span>~70–100 tis.</span></h4>
+      <p>Část trávníku nechat kvést, sekat mozaikovitě. Ušetří se za sekání. Mimo dráhy disc golfu.</p></div>
+    <div class="mi"><h4><b>Hamaky</b><span>~150–250 tis.</span></h4>
+      <p>Ocelové rámy se sítěmi, kde se dá ležet, protože stromy samy hamaky nesnesou.</p></div>
+    <div class="mi"><h4><b>Piknikový palouk</b><span>~120–200 tis.</span></h4>
+      <p>Pevné piknikové stoly pod stromy, pro rodiny i pejskaře po procházce.</p></div>
+    <div class="mi"><h4><b>Pejskařský koutek</b><span>~60–100 tis.</span></h4>
+      <p>Stín a lavičky u psího hřiště, mimo jeho plot. Jen to, co už nebude v projektu psího hřiště.</p></div>
+    <div class="mi"><h4><b>Stezka stromů</b><span>~75–120 tis.</span></h4>
+      <p>Cedulky se jmény stromů a QR kódy. Hodí se pro školy.</p></div>
+    <div class="mi"><h4><b>Budky pro ptáky a netopýry</b><span>~30–50 tis.</span></h4>
+      <p>Levný doplněk k čemukoli jinému.</p></div>
+  </details>
+  <p class="combo"><b>Kombinace:</b> „Disc golf + krokusy“ (~365–390 tis.), nebo „Butovice kvetou“: krokusy, louka, sad a budky (~350–390 tis.).</p>
+</div>
+
+<!-- BMX -->
+<div class="spot" id="bmx">
+  <h3>BMX kopečky u koupaliště</h3>
+  <p class="sub"><span class="lvl">kousek za centrem</span>vedle biotopu, ohniště, lanové dráhy a workoutu, 6 minut od náměstí</p>
+  <div class="pics"><img loading="lazy" src="img/misto_bmx_kopecky.jpg" alt="Zarůstající BMX kopečky u koupaliště"><img loading="lazy" src="img/misto_bmx_plocha.jpg" alt="Prázdná štěrková plocha u BMX dráhy"></div>
+  <p class="cap">Kopečky zarůstají, vedle je prázdná štěrková plocha.</p>
+  <div class="facts"><b>Musí s tím ladit:</b><ul><li>Studie letního stadionu už počítá se skateparkem, workoutem, dětským a dopravním hřištěm, takže ty sem nepatří.</li><li>Pod zemí je hodně sítí. Lanovou dráhu tu město umisťovalo „velmi složitě“, takže to chce mapu sítí.</li><li>Štěrková plocha slouží jako parkoviště koupaliště a město tu plánuje „Parkoviště u biotopu“. Vlastník plochy ani kopečků (BMX klub?) zatím není ověřený. Nejdřív zjistit, kde vůbec je městský pozemek.</li></ul></div>
+
+  <div class="mi"><h4><b><span class="star">★</span> Klouzačka z kopce</b><span>~330–380 tis.</span></h4>
+    <p>Dlouhá nerezová skluzavka zapuštěná do travnatého svahu, nahoru po schodech z pražců. Baví malé děti i dospělé, údržba skoro žádná. V Praze na Julisce letos otevřeli čtyřicetimetrovou a hned je to rodinný hit.</p>
+    <p class="ex"><a href="https://www.kudyznudy.cz/aktivity/nejdelsi-klouzacka-v-praze">nejdelší klouzačka v Praze</a>, <a href="https://www.hriste-piccolino.cz/dvoudrahova-svahova-skluzavka-z-nerezu-3-7-m-s-akatovou-podestou/">ceník svahových skluzavek</a>.</p></div>
+  <div class="mi"><h4><b><span class="star">★</span> Trampolínová stezka</b><span>~330–360 tis.</span></h4>
+    <p>Tři trampolíny zapuštěné do země za sebou, skáče se „po stezce“. Zdarma a venku jich je v Česku málo.</p>
+    <p class="ex"><a href="https://www.jiznicechy.cz/en/targets/2594-zemni-trampolina-v-obci-stritez">Střítěž</a>, <a href="https://www.hriste-piccolino.cz/trampoliny-en-1176/">ceny trampolín</a>.</p></div>
+  <div class="mi"><h4><b><span class="star">★</span> Elektrický gril zdarma</b><span>~300–370 tis.</span></h4>
+    <p>Veřejný gril na tlačítko vedle ohniště, jak je to běžné v Austrálii. Funguje i v době zákazu ohňů, nekouří a nic se nemusí rezervovat.</p>
+    <p class="ex"><a href="https://www.kudyznudy.cz/aktivity/grillpointy-na-praze-3">Grillpointy Praha 3</a>, <a href="https://www.centennialparklands.com.au/visit/things-to-see-and-do/bbqs">Sydney</a>.</p></div>
+  <details class="more"><summary>Další nápady pro kopečky (9)</summary>
+    <div class="mi"><h4><b>Lanovka přes kopečky</b><span>~250–390 tis.</span></h4>
+      <p>Dvacetimetrová dětská lanovka. Nejtěžší umístit kvůli sítím. <span class="ex">(<a href="https://www.hriste-piccolino.cz/lanova-draha--lanovka-a--na-detske-hriste-20-m--/">ceník</a>)</span></p></div>
+    <div class="mi"><h4><b>Houpačkový háj</b><span>~250–290 tis.</span></h4>
+      <p>Velké hnízdové houpačky, na které se vejde celá rodina, i dospělí.</p></div>
+    <div class="mi"><h4><b>Hřiště s vodou a pískem</b><span>~250–390 tis.</span></h4>
+      <p>Ruční pumpa, žlábky a písek. Potřebuje pitnou vodu a souhlas hygieny.</p></div>
+    <div class="mi"><h4><b>Pingpongový ostrov</b><span>~300–350 tis.</span></h4>
+      <p>Tři venkovní stoly na zpevněné ploše. Hrají babičky s vnoučaty i teenageři.</p></div>
+    <div class="mi"><h4><b>Pétanque a velké hry</b><span>~200–330 tis.</span></h4>
+      <p>Dvě až tři hřiště na pétanque, velké šachy, lavičky. Pro seniory i rodiny.</p></div>
+    <div class="mi"><h4><b>Poodří golf</b><span>~300–390 tis.</span></h4>
+      <p>Betonový minigolf zdarma, jamky ve tvaru meandru, ledňáčkovy nory nebo bobří hráze.</p></div>
+    <div class="mi"><h4><b>Pláž u biotopu</b><span>~280–390 tis.</span></h4>
+      <p>Písek, lehátka a hamaky před plotem koupaliště, zdarma a celý rok.</p></div>
+    <div class="mi"><h4><b>Vlnovka pro nejmenší</b><span>~150–300 tis.</span></h4>
+      <p>Okruh pro odrážedla vedle BMX kopečků, aby se nejmenší naučili jezdit.</p></div>
+    <div class="mi"><h4><b>Okruh pro RC auta</b><span>~50–150 tis.</span></h4>
+      <p>Hliněná dráha se skoky pro auta na dálkové ovládání. Odvážné a pro úzkou skupinu, ale nikde v okolí není.</p></div>
+  </details>
+</div>
+
+<!-- RYBNÍK -->
+<div class="spot" id="nadrz">
+  <h3>Park u požární nádrže pod kostelem</h3>
+  <p class="sub"><span class="lvl far">Studénka 1</span>borovice, trávník, nádrž a cesta nahoru ke kostelu, půl hodiny pěšky od náměstí, vede tudy cyklotrasa 6011</p>
+  <div class="pics"><img loading="lazy" src="img/misto_rybnik_nadrz.jpg" alt="Požární nádrž ve Studénce 1 s betonovým okrajem"><img loading="lazy" src="img/misto_rybnik_borovice.jpg" alt="Lavičky pod borovicemi v parku u nádrže"></div>
+  <p class="cap">Krásný borový háj, ve kterém je jen pár laviček.</p>
+  <div class="facts"><b>Musí s tím ladit:</b><ul><li>Nádrž je požární voda města, takže se nesmí nic stavět do vody ani blokovat místo, odkud čerpají hasiči. Jde jen o věci na břehu nebo plovoucí a odnímatelné, a to po dohodě s hasiči.</li><li>Na ceduli je zákaz psů.</li><li>Město chystá projekt parkoviště „U Rybníčku“ a v letech 2028–29 opravu ulice, takže ověřit, kde přesně bude.</li><li>Leží v území s archeologickými nálezy, takže výkopy se musí předem ohlásit. To je běžné.</li></ul></div>
+
+  <div class="mi"><h4><b><span class="star">★</span> Hrající houpačky</b><span>~330–390 tis.</span></h4>
+    <p>Houpačky pod borovicemi, které při houpání hrají tóny. Když se houpe víc lidí najednou, skládá se z toho hudba. V Montrealu je to jarní hit už od roku 2011. V Česku nic takového není. Večer se vypínají, kvůli sousedům.</p>
+    <p class="ex"><a href="https://dailytouslesjours.com/en/work/21-swings">21 Balançoires, Montreal</a>.</p></div>
+  <div class="mi"><h4><b><span class="star">★</span> Hamakový háj</b><span>~300–360 tis.</span></h4>
+    <p>Sloupky pro vlastní hamaky a pár pevných sítí přímo v borovém háji. Lehnout si do stínu borovic a dívat se do korun. V Tyrolsku z toho udělali turistickou atrakci, u nás to mají v Nasavrkách.</p>
+    <p class="ex"><a href="https://www.travel4news.at/wildschoenau-eroeffnet-ersten-haengematten-park-tirols/">Wildschönau</a>, <a href="https://www.irozhlas.cz/zpravy-domov/keltsky-buh-ve-vode-hamakoviste-a-ryzovani-zlata-v-nasavrkach-promenili-byvaly_2606291247_bva">Nasavrky</a>.</p></div>
+  <div class="mi"><h4><b><span class="star">★</span> Lesní obr</b><span>~200–390 tis.</span></h4>
+    <p>Obří postava ze dřeva schovaná mezi borovicemi, jako trollové dánského umělce Thomase Dambo, za kterými lidi cestují po celém světě. Originál je pro nás moc drahý, ale místní řezbář nebo student umělecké školy to zvládne. Lehnout si mu do dlaně, prolézt mu nohama.</p></div>
+  <div class="mi"><h4><b>Světlušky v borovicích</b><span>~250–380 tis.</span></h4>
+    <p>Stovky drobných solárních světýlek v trávě a nízko pod borovicemi, večer to vypadá jako roj světlušek. Ohled na sousedy a na netopýry.</p>
+    <p class="ex">Inspirace: <a href="https://brucemunro.co.uk/works/field-of-light/">Field of Light, Bruce Munro</a>.</p></div>
+  <details class="more"><summary>Další nápady pro park u nádrže (9)</summary>
+    <div class="mi"><h4><b>Bruslení na nádrži</b><span>~60–120 tis.</span></h4>
+      <p>Jak v Nizozemsku: v zimě se měří led, tabule ukáže naměřenou tloušťku a lavička na přezouvání. Místo čerpání se ohradí. Bruslí se na vlastní nebezpečí, mrazivých dní je u nás málo.</p></div>
+    <div class="mi"><h4><b>Plovoucí vánoční strom a lampionová plavba</b><span>~90–180 tis.</span></h4>
+      <p>V adventu plovoucí stromek na nádrži, v létě plavba lampionů. Plove a jde odnést, takže hasičům nepřekáží.</p></div>
+    <div class="mi"><h4><b>Plovoucí ostrov pro ptáky</b><span>~150–230 tis.</span></h4>
+      <p>25 m² plovoucí zeleně, která čistí vodu a láká ptáky. <span class="ex">(<a href="https://www.seznamzpravy.cz/clanek/na-prehrade-v-jablonci-je-na-40-plovoucich-ostrovu-k-cisteni-vody-178039">Jablonec</a>)</span></p></div>
+    <div class="mi"><h4><b>Hnízda v korunách</b><span>~250–380 tis.</span></h4>
+      <p>Velké sítě na sloupech mezi borovicemi, kde se dá ležet a houpat. <span class="ex">(<a href="https://vvanat.fr/blog/parcours-suspendu-filets-catamaran-les-chiens-noirs/">Francie</a>)</span></p></div>
+    <div class="mi"><h4><b>Pétanque pod borovicemi</b><span>~120–200 tis.</span></h4>
+      <p>Dvě hřiště jako na francouzské návsi, s krabicí na koule. Pro sousedy a seniory.</p></div>
+    <div class="mi"><h4><b>Lesní koupel</b><span>~220–330 tis.</span></h4>
+      <p>Tichá zahrada pro japonské „koupání v lese“: lehátka, bosá stezka, cedule s návodem.</p></div>
+    <div class="mi"><h4><b>Čítárna pod korunami</b><span>~150–250 tis.</span></h4>
+      <p>Čtecí síť a knihovnička v korunách, v létě program s knihovnou. <span class="ex">(<a href="https://sloveniatimes.com/10820/outdoor-library-season-begins">Slovinsko</a>)</span></p></div>
+    <div class="mi"><h4><b>Badatelna</b><span>~180–300 tis.</span></h4>
+      <p>Malá oddělená tůňka s můstkem, síťkami a lupami, kde děti zkoumají, co žije ve vodě. Mimo hlubokou nádrž. <span class="ex">(<a href="https://www.kentwildlifetrust.org.uk/blog/new-pond-dipping-platforms-kent-wildlife-trust">Kent</a>)</span></p></div>
+    <div class="mi"><h4><b>Sakurová cesta ke kostelu</b><span>~100–250 tis.</span></h4>
+      <p>Japonské třešně podél cesty od nádrže ke kostelu. Pár týdnů v roce růžový tunel, který si každý vyfotí. V okolí nic podobného není.</p></div>
+  </details>
+</div>
+
+<!-- STARÉ HŘIŠTĚ -->
+<div class="spot" id="hriste">
+  <h3>Staré hřiště za kostelem</h3>
+  <p class="sub"><span class="lvl far">Studénka 1, nejdál</span>tráva mezi topoly, staré branky, kolem pole a výhled na Beskydy, asi 35 minut pěšky od náměstí</p>
+  <div class="pics one"><img loading="lazy" src="img/misto_hriste_beskydy.jpg" alt="Výhled ze starého hřiště přes pole na Beskydy"></div>
+  <p class="cap">Výhled ze starého hřiště: přes pole až na Beskydy.</p>
+  <div class="pics"><img loading="lazy" src="img/misto_hriste_branka.jpg" alt="Stará rezavá branka na hřišti za kostelem"><img loading="lazy" src="img/misto_hriste_topoly.jpg" alt="Topoly a branka na starém hřišti"></div>
+  <p class="cap">Topoly, staré branky a otevřený obzor.</p>
+  <p><b>Zajímavost:</b> podle výpočtu leží Lysá hora z hřiště zhruba ve směru, kde 21. prosince vychází slunce. O zimním slunovratu by tedy slunce mělo vycházet z nejvyšší hory Beskyd. Ověřím to fotkou letos 21. 12. Několik nápadů na tom staví.</p>
+  <div class="facts"><b>Co víme a co ověřit:</b><ul><li>Městu patří jen samotné hřiště (asi 1 200 m²). Topoly stojí většinou na okolních pozemcích, které městu nepatří.</li><li>Kostel kolem sebe nemá ochranné pásmo a nejde o chráněnou krajinnou oblast.</li><li>Asi 100 m odsud se plánuje rozšíření hřbitova, takže nic hlučného.</li><li>Ověřit, jestli vyšší stavby nevadí stavebnímu úřadu a ochraně krajinného rázu.</li></ul></div>
+
+  <div class="mi"><h4><b><span class="star">★</span> Slunovratový kruh pod Lysou horou</b><span>~300–380 tis.</span></h4>
+    <p>Kruh z kamenů, jejichž průzory míří tam, kde vychází a zapadá slunce o slunovratech a rovnodennostech. V zimě tedy přímo na Lysou horu. Kolem nízká deska se jmény všech viditelných vrcholů Beskyd. Každý rok 21. prosince je pak důvod přijít, a to bez jakékoli obsluhy.</p>
+    <p class="ex">Příklady: <a href="https://www.kudyznudy.cz/aktivity/jihocesky-stonehenge-menhiry-u-holasovic">Jihočeský Stonehenge u Holašovic</a>, <a href="https://en.wikipedia.org/wiki/Goseck_circle">Goseck</a> (DE). V okolí jsem nic podobného nenašel.</p></div>
+  <div class="mi"><h4><b><span class="star">★</span> Obří lavice s výhledem na Beskydy</b><span>~300–360 tis.</span></h4>
+    <p>Lavice ve výšce kolem dvou metrů, dospělí na ní sedí s nohama ve vzduchu jako děti. Výhled je přes obilí i kukuřici, před ní deska se jmény vrcholů. V Itálii jich je přes 200 a jezdí se k nim jako na výlet. Oficiální italskou značku z veřejných peněz zaplatit nejde, vlastní lavice ano.</p>
+    <p class="ex"><a href="https://bigbenchcommunityproject.org/en/build-a-big-bench">Big Bench Community Project</a>, <a href="https://www.novinky.cz/clanek/cestovani-obri-zidle-i-houpacky-s-vyhledem-v-jesenikach-vznikaji-nova-turisticka-lakadla-40457288">obří židle a houpačky ve Vrbně pod Pradědem</a>.</p></div>
+  <div class="mi"><h4><b><span class="star">★</span> Houpačka nad polem</b><span>~190–360 tis.</span></h4>
+    <p>Vysoká houpačka, která se houpe směrem do polí a na hory. Bezpečná, certifikovaná verze „houpačky na konci světa“ z Ekvádoru. Vrbno pod Pradědem dalo za tři taková místa na fotky 220 tisíc.</p></div>
+  <div class="mi"><h4><b><span class="star">★</span> Telefon do větru</b><span>~60–150 tis.</span></h4>
+    <p>Telefonní budka uprostřed louky s nezapojeným telefonem, ze kterého lidé „volají“ svým zemřelým blízkým. Vznikl v Japonsku po tsunami, přijelo k němu přes 30 tisíc lidí a dnes je takových budek na světě přes 400. V Česku zatím žádná. Levné, dá se spojit s jiným nápadem.</p>
+    <p class="ex"><a href="https://en.wikipedia.org/wiki/Wind_phone">Wind phone</a>.</p></div>
+  <details class="more"><summary>Další nápady pro staré hřiště (9)</summary>
+    <div class="mi"><h4><b>Hvězdná louka</b><span>~220–320 tis.</span></h4>
+      <p>Kruh pevných lehátek na pozorování hvězd, kámen mířící na Polárku, mapa oblohy. Žádné lampy. Na Perseidy a Geminidy akce s astronomy. <span class="ex">(<a href="https://www.darkskydiscovery.org.uk/">Dark Sky Discovery Sites</a>)</span></p></div>
+    <div class="mi"><h4><b>Labyrint v trávě</b><span>~65–295 tis.</span></h4>
+      <p>Klasický labyrint vysekaný do trávníku jako na anglických loukách, nebo vyskládaný z kamenů jako ve Skandinávii. Na konci výhled na hory. Levný doplněk. <span class="ex">(<a href="https://en.wikipedia.org/wiki/Turf_maze">turf maze</a>)</span></p></div>
+    <div class="mi"><h4><b>Zpívající topoly</b><span>~250–390 tis.</span></h4>
+      <p>Ocelová socha, která zpívá ve větru, a na poli fouká skoro pořád. Soutěž pro studenty uměleckých škol. <span class="ex">(<a href="https://en.wikipedia.org/wiki/Singing_Ringing_Tree_(sculpture)">Singing Ringing Tree, Burnley</a>)</span></p></div>
+    <div class="mi"><h4><b>Komora s výhledem (camera obscura)</b><span>~180–330 tis.</span></h4>
+      <p>Malá tmavá chatka, kde čočka promítá živý obraz polí a Beskyd na bílý stůl, bez elektřiny. <span class="ex">(<a href="https://petapixel.com/2016/05/23/undergrond-camera-obscura-installation-captures-english-countryside/">The Reveal, Essex</a>)</span></p></div>
+    <div class="mi"><h4><b>Živá katedrála</b><span>~200–330 tis.</span></h4>
+      <p>Stromy vysázené do půdorysu kostela sv. Bartoloměje: kmeny jako sloupy, koruny jako klenba. Začíná se vrbou, aby to fungovalo hned. Každý rok je cennější. <span class="ex">(<a href="https://en.wikipedia.org/wiki/Tree_Cathedral">Tree Cathedral</a>)</span></p></div>
+    <div class="mi"><h4><b>Nocoviště</b><span>~250–300 tis.</span></h4>
+      <p>Otevřený přístřešek na jednu noc zdarma, jak je to běžné ve Skandinávii. Pro lidi z Ostravy, kteří přijedou vlakem. Riziko večírků a nepořádku. <span class="ex">(<a href="https://archiweb.cz/en/news/lesy-cr-po-republice-postavily-31-nouzovych-utulen-da-se-v-nich-i-prespat">přístřešky Lesů ČR</a>)</span></p></div>
+    <div class="mi"><h4><b>Vyhlídkové molo</b><span>~280–390 tis.</span></h4>
+      <p>Vyvýšená dřevěná plošina nad okrajem pole, navržená architekty jako odpočívadla podél norských vyhlídkových silnic. <span class="ex">(<a href="https://www.nasjonaleturistveger.no/en/">Norwegian Scenic Routes</a>)</span></p></div>
+    <div class="mi"><h4><b>Sad k utržení</b><span>~180–300 tis.</span></h4>
+      <p>Ovocné stromy a keře, které si může otrhat každý. Spíš jako doplněk cesty od kostela.</p></div>
+    <div class="mi"><h4><b>Drobnosti</b><span>~10–40 tis.</span></h4>
+      <p>Starou branku natřít a nasměrovat tak, aby v ní byla Lysá hora jako v rámu obrazu. Stožár s větrným rukávem a drakiáda.</p></div>
+  </details>
+  <p class="combo"><b>Kombinace do 390 tis.:</b> „Kde slunce vychází z Lysé hory“: kamenný kruh, labyrint v trávě a branka jako rám. Nebo „Den a noc na poli“: obří lavice a pár lehátek na hvězdy. Nebo „Ticho a vítr“: zpívající socha, telefon do větru a labyrint.</p>
+</div>
+
 <h2>Odložené</h2>
+<div class="idea">
+  <h3>Mural v podchodu pod nádražím – snad v roce 2028</h3>
+  <div class="tags"><span class="tag hot">2028</span><span class="tag">hezčí město</span><span class="tag">umění</span></div>
+  <div class="pics one"><img loading="lazy" src="img/podchod_dnes.jpg" alt="Podchod pod nádražím ve Studénce dnes"></div>
+  <p class="cap">Podchod dnes.</p>
+  <div class="pics"><img loading="lazy" src="img/podchod_vibrant.jpg" alt="Vizualizace: barevný mural Poodří"><img loading="lazy" src="img/podchod_journal.jpg" alt="Vizualizace: mural jako přírodovědný deník"></div>
+  <p class="cap">Dva oblíbené styly: barevný (vlevo) a přírodovědný deník (vpravo).</p>
+  <div class="gallery"><figure><img loading="lazy" src="img/podchod_flat.jpg" alt="Vizualizace podchodu, styl plakátový"><figcaption>plakátový</figcaption></figure><figure><img loading="lazy" src="img/podchod_pixelized.jpg" alt="Vizualizace podchodu, styl pixelový"><figcaption>pixelový</figcaption></figure><figure><img loading="lazy" src="img/podchod_printmaking.jpg" alt="Vizualizace podchodu, styl linoryt"><figcaption>linoryt</figcaption></figure><figure><img loading="lazy" src="img/podchod_secese.jpg" alt="Vizualizace podchodu, styl secese"><figcaption>secese</figcaption></figure><figure><img loading="lazy" src="img/podchod_topographic.jpg" alt="Vizualizace podchodu, styl mapa Poodří"><figcaption>mapa Poodří</figcaption></figure><figure><img loading="lazy" src="img/podchod_minimalisticky.jpg" alt="Vizualizace podchodu, styl linková kresba"><figcaption>linková kresba</figcaption></figure><figure><img loading="lazy" src="img/podchod_realisticky.jpg" alt="Vizualizace podchodu, styl realistický"><figcaption>realistický</figcaption></figure><figure><img loading="lazy" src="img/podchod_se_stropem.jpg" alt="Vizualizace podchodu, styl realistický se stropem"><figcaption>realistický se stropem</figcaption></figure></div>
+  <p class="cap">Další možné styly. Vizualizace jsou ilustrační, vytvořené pomocí AI. Malba stropu by se do rozpočtu nevešla. Stěny jsou navržené tak, aby se strop dal později doplnit, pokud se bude líbit.</p>
+  <p>Šedesát metrů bílých stěn, kterými denně prochází každý, kdo jede vlakem do školy nebo do práce. Velká malba na téma <b>Poodří</b>: tůně, lužní lesy, rozlivy Odry, čápi, ledňáčci, bobři, kvetoucí louky. Tedy příroda, kvůli které se do Studénky jezdí. Námět je daný, lidi by hlasovali jen o stylu. Ukázky stylů jsou níže. Malovat by mohli například studenti Fakulty umění Ostravské univerzity.</p>
+  <p><b>Proč ne letos:</b> podchod patří Správě železnic a podle pravidel musí být projekt na majetku města. Město to tak potvrdilo, takže do roku 2027 to nejde.</p>
+  <p><b>Co dál:</b> pravidla na rok 2028 se budou projednávat v srpnu 2027. Navrhuju městu, aby šly podávat i projekty na veřejně přístupném místě, které městu nepatří, pokud s tím vlastník písemně souhlasí. Jinde to už jde, například v Boskovicích, Vracově nebo Ratíškovicích.</p>
+</div>
+
 <div class="idea">
   <h3>Stromy na náměstí</h3>
   <div class="pics one"><img loading="lazy" src="img/stromy_plna_verze.jpg" alt="Vizualizace: stromořadí se stolky a lavičkami na náměstí Republiky"></div>
@@ -167,8 +385,8 @@ footer{color:var(--muted);font-size:.85rem;padding:48px 0 40px;border-top:1px so
 <h2>Co dál</h2>
 <div class="box">
   <ol style="margin:0;padding-left:20px">
-    <li>Napište do komentářů pod příspěvkem, které nápady se vám líbí a které ne (klidně jen čísla).</li>
-    <li>Ověřuju u města a Správy železnic, jestli jde mural v podchodu udělat.</li>
+    <li>Napište do komentářů pod příspěvkem, které nápady a místa se vám líbí a které ne.</li>
+    <li>Ověřuju pozemky a podmínky u města.</li>
     <li>Do 30. 11. podávám návrh a sháním 20+ podpisů, budu potřebovat vás.</li>
   </ol>
   <p class="vote">Napadá vás něco lepšího? Napište to taky do komentářů.</p>
